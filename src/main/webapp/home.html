@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>Insert title here</title>
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link>
+	<style>
+		#frm {
+			width: 500px;
+			margin: auto;
+			margin-top: 100px;
+		}
+
+		marquee {
+			margin-top: 20px;
+		}
+	</style>
+</head>
+
+<body class="container-fluid">
+	<marquee>
+		<h2 class="text-primary">Register Here</h2>
+	</marquee>
+	<form action="register" method="post" class="form card" id="frm">
+		<h2 class="bg-danger text-white card-header">Registration Form</h2>
+		<table class="table table-hover">
+			<tr>
+				<td>Name</td>
+				<td><input type="text" name="UserName" required></td>
+			</tr>
+			<tr>
+				<td>Email</td>
+				<td><input type="email" name="UserEmail" required></td>
+			</tr>
+			<tr>
+				<td>Mobile</td>
+				<td><input type="text" name="UserMobile" required></td>
+			</tr>
+			<tr>
+				<td>Dob</td>
+				<td><input type="date" name="UserDob" required></td>
+			</tr>
+			<tr>
+				<td>Gender</td>
+				<td><input type="radio" value="Male" name="UserGender" required>Male &nbsp; &nbsp;
+					<input type="radio" value="Female" name="UserGender" required>Female
+				</td>
+			</tr>
+			<tr>
+				<td>City</td>
+				<td><select name="UserCity">
+						<option hidden>Select Your City</option>
+						<option value="Mumbai">Mumbai</option>
+						<option value="Pune">Pune</option>
+						<option value="Delhi">Delhi</option>
+						<option value="Hydrabad">Hydrabad</option>
+						<option value="Bangalore">Bangalore</option>
+					</select></td>
+			<tr class="card-footer">
+				<td><button class="btn btn-outline-success" type="submit">Register</button></td>
+				<td><button class="btn btn-outline-danger" type="reset">Cancel</button></td>
+			</tr>
+			</tr>
+		</table>
+		<button class="btn btn-outline-success d-block"><a href="showData">Show Users</a></button>
+	</form>
+</body>
+
+</html>
